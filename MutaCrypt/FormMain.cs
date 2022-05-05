@@ -158,6 +158,10 @@ namespace MutaCrypt {
             checkBox_FE_AddReplace.Checked = true;
         }
 
+        /// <summary>
+        /// Generate a random string for using it as a file name
+        /// </summary>
+        /// <returns>Return a string lengt(4-64) with raandom chars, with a filter to be used as name in Windows file system</returns>
         private string genRandomName() {
             Random r1 = new Random();
             Random r2 = new Random();
@@ -183,6 +187,10 @@ namespace MutaCrypt {
             return reslut;
         }
 
+        /// <summary>
+        /// Gets the date and time from now in a constant for log and naming
+        /// </summary>
+        /// <returns>Return the DateTime from now in format yy-MM-dd--HH-mm-ss</returns>
         private string genDateTimeName() {
             return DateTime.Now.ToString("yy-MM-dd--HH-mm-ss");
         }
